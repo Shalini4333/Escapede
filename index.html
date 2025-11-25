@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapade - NA Plots at Shirwal</title>
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-gray-700">
+    <!-- HEADER & NAVBAR -->
+    <header
+      id="navbar"
+      class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center">
+            <img
+              src="assets/newimages/new-logo.png"
+              alt="Right Choice Escapade"
+              class="h-16 ml-14"
+            />
+          </a>
+
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex space-x-8 items-center">
+            <a href="#about" class="text-white hover:text-green-200 transition"
+              >About</a
+            >    <a
+              href="#gallery"
+              class="text-white hover:text-green-200 transition"
+              >Actual Site Photos</a
+            > 
+            <a
+              href="#amenities"
+              class="text-white hover:text-green-200 transition"
+              >Amenities</a
+            >
+        
+            <a
+              href="#location"
+              class="text-white hover:text-green-200 transition"
+              >Location</a
+            >
+            <div
+              class="text-sm px-4 py-2 rounded font-semibold shadow hover:shadow-xl transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#2e7d32]"
+              style="background-color: #2e7d32; color: white;"
+              onclick="document.getElementById('Site-visit').style.display='block'; document.body.style.overflow='hidden'; return false;"
+            >Book a Free Site-visit</div>
+            <div
+              class="text-sm px-4 py-2 rounded border-2 border-dashed font-semibold bg-white shadow hover:shadow-xl hover:text-[#27692a] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#2e7d32] ml-2"
+              style="border-color: #2e7d32; color: #2e7d32;"
+              onclick="document.getElementById('Site-visit').style.display='block'; document.body.style.overflow='hidden'; return false;"
+            >+91 9766363939</div>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-gray-800">
+        <nav class="flex flex-col items-center space-y-4 py-6">
+          <a href="#about" class="text-white block">About</a>
+          <a href="#gallery" class="text-white block">Actual Site Photos</a>
+          <a href="#amenities" class="text-white block">Amenities</a>
+          <a href="#location" class="text-white block">Location</a>
+          <div
+            class="text-sm px-4 py-2 rounded font-semibold shadow hover:shadow-xl transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#2e7d32] mt-2"
+            style="background-color: #2e7d32; color: white; width: 80%; text-align: center;"
+            onclick="document.getElementById('Site-visit').style.display='block'; document.body.style.overflow='hidden'; return false;"
+          >Book a Free Site-visit</div>
+          <div
+            class="text-sm px-4 py-2 rounded border-2 border-dashed font-semibold bg-white shadow hover:shadow-xl hover:text-[#27692a] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#2e7d32] mt-2"
+            style="border-color: #2e7d32; color: #2e7d32; width: 80%; text-align: center;"
+            onclick="document.getElementById('Site-visit').style.display='block'; document.body.style.overflow='hidden'; return false;"
+          >+91 9766363939</div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        id="home"
+        class="relative h-screen flex items-center justify-center text-white"
+      >
+        <!-- Hero Background -->
+        <img
+          style="
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+          "
+          src="assets/newimages/new2/DSC_0048.JPG"
+          alt="hero-image"
+        />
+        <div class="hero-overlay"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1
+            class="text-2xl md:text-4xl font-extrabold leading-tight fade-in-up"
+          >
+            <span class="typewriter block sm:inline">
+              Your Weekend Home is<br class="block sm:hidden"> Closer Than You Think!
+            </span>
+          </h1>
+          <div class="text-rotation-container">
+            <div class="text-rotation"             style="text-shadow: 0 4px 24px rgb(0, 0, 0), 0 0 8px #000, 0 0 32px #000;"
+>
+              <h1
+            class="text-2xl  leading-tight"
+          >
+              <span class="rotating-text">ESCAPADE</span>
+              <span class="rotating-text">NA PLOTS AT SHIRWAL</span>
+            </h1>
+            </div>
+            </div>
+            <p
+            class="text-xl md:text-2xl mt-6 mb-8 font-light fade-in-up"
+            style="transition-delay: 0.4s; color: rgba(255,255,255,0.89); text-shadow: 0 4px 24px rgb(0, 0, 0), 0 0 8px #000, 0 0 32px #000;"
+          >
+            Your Gateway to Tranquil Living
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left mt-6">
+              <h2
+                class="text-3xl md:text-5xl font-bold text-gray-800 mb-8 fade-in-up"
+              >
+                Discover Your Escape :
+              </h2>
+              <p class="text-xl leading-relaxed text-gray-600 mb-6 fade-in-up">
+                Right Choice Escapade is a sprawling 25-acre development
+                offering the ideal blend of serenity and modern living. Whether
+                for a peaceful weekend retreat, a dream second home, or a
+                promising investment, our thoughtfully planned NA plots are your
+                canvas.
+              </p>
+              <p class="text-xl leading-relaxed text-gray-600 fade-in-up">
+                Nestled in the scenic landscape of Shirwal, own a piece of
+                paradise with convenient access to urban amenities.
+              </p>
+            </div>
+            <div
+              class="lg:w-1/2 fade-in-up relative"
+              style="transition-delay: 0.3s"
+            >
+              <img
+                src="assets/newimages/new2/DSC_0067.JPG"
+                alt="Right Choice Escapade Layout"
+                class="rounded-lg mx-auto"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section id="gallery" class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 fade-in-up"
+            >
+              Actual Site Photos
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto fade-in-up">
+              Explore the natural beauty and thoughtful planning of Right Choice
+              Escapade.
+            </p>
+          </div>
+
+          <!-- Image Carousel -->
+          <div class="carousel-container-inline mb-20 fade-in-up">
+            <div class="carousel-wrapper-inline">
+              <button class="carousel-nav-inline carousel-prev-inline h-14 w-14"  onclick="prevCarouselImage()">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              
+              <div class="carousel-images-inline" id="carouselImagesInline">
+                <!-- All 15 images will be displayed here -->
+              </div>
+              
+              <button class="carousel-nav-inline carousel-next-inline h-14 w-14" onclick="nextCarouselImage()">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            
+            <div class="carousel-indicators-inline" id="carouselIndicatorsInline">
+              <!-- Dot indicators will be generated here -->
+            </div>
+          </div>
+
+          <!-- Bento Grid Section -->
+          <div class="text-center p-8 fade-in-up">
+           
+          </div>
+
+          <!-- Bento Grid - 5 Featured Images (No Lightbox) -->
+          <div class="bento-grid mb-12 fade-in-up">
+            <div class="bento-item bento-hero" onclick="openLightbox(0)">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                data-src="assets/newimages/new2/DSC_0048.JPG"
+                alt="Escapade - Scenic Landscape View"
+                class="lazy-load bento-img"
+              />
+            </div>
+            <div class="bento-item bento-tall" onclick="openLightbox(1)">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                data-src="assets/newimages/WhatsApp Image 2025-07-03 at 6.27.24 PM (1).jpeg"
+                alt="Escapade - Development Progress"
+                class="lazy-load bento-img"
+              />
+            </div>
+            <div class="bento-item bento-square" onclick="openLightbox(2)">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                data-src="assets/newimages/new2/DSC_0021.JPG"
+                alt="Escapade - Natural Environment"
+                class="lazy-load bento-img"
+              />
+            </div>
+            <div class="bento-item bento-square" onclick="openLightbox(3)">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                data-src="assets/newimages/WhatsApp Image 2025-07-03 at 6.27.25 PM.jpeg"
+                alt="Escapade - Road Development"
+                class="lazy-load bento-img"
+              />
+            </div>
+            <div class="bento-item bento-square" onclick="openLightbox(4)">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                data-src="assets/newimages/WhatsApp Image 2025-01-18 at 6.12.39 PM.jpeg"
+                alt="Escapade - Plot Infrastructure"
+                class="lazy-load bento-img"
+              />
+            </div>
+          </div>
+          <!-- Fullscreen Bento Image Modal -->
+          <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+              <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+            </div>
+            <div class="lightbox-caption">
+              <span id="lightbox-caption-text"></span>
+              <div class="lightbox-counter">
+                <span id="current-img">1</span> / <span id="total-imgs">5</span>
+              </div>
+            </div>
+            <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</span>
+          </div>
+      </section>
+
+    <!-- MahaRERA and Waterfront -->
+    <section>
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Left Column: Image -->
+          <div class="w-full md:w-2/5 flex justify-center mb-6 md:mb-0">
+            <img src="assets/images/maha-rera.png" alt="RERA Registered" class="rounded-lg w-full max-w-xs object-cover" />
+          </div>
+          <!-- Right Column: Text -->
+          <div class="w-full md:w-3/5">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">RERA Registered</h2>
+            <p class="text-lg text-gray-700 mb-2">Registration No: <strong>P52700011445</strong></p>
+            <h3 class="text-xl font-semibold text-green-700 mb-2">Escapade - Sanctioned NA Plots</h3>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Fully compliant with Maharashtra RERA regulations .</li>
+              <li>Premium NA plot, for your complete peace of mind.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- KEY FEATURES SECTION -->
+      <section id="amenities" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Key Features & Amenities</h1>
+              <div class="h-1 w-20 bg-green-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <!-- 2000+ sq.ft. Plots -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/plot.png" alt="Large Plots" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SPACIOUS LIVING</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">2000+ sq.ft. Plots</h2>
+                <p class="leading-relaxed text-base">Generously sized plots perfect for spacious bungalows with gardens and outdoor living areas.</p>
+              </div>
+            </div>
+            
+            <!-- 25-Acre Green Township -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/holding-plant.png" alt="Green Township" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">ECO-FRIENDLY</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">25-Acre Green Township</h2>
+                <p class="leading-relaxed text-base">Low-density development with 60% open spaces, preserving Shirwal's natural beauty.</p>
+              </div>
+            </div>
+            
+            <!-- RERA Registered -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/shield.png" alt="RERA Certified" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">LEGAL COMPLIANCE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">RERA Registered</h2>
+                <p class="leading-relaxed text-base">MH/NA/Satara/0103/23 - Fully compliant with Maharashtra RERA regulations for your complete peace of mind.</p>
+              </div>
+            </div>
+            
+            <!-- Gated Community -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/entrance.png" alt="Gated Community" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SECURITY</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gated Community</h2>
+                <p class="leading-relaxed text-base">Secured entry, 24/7 surveillance, and dedicated patrol staff for a worry-free lifestyle.</p>
+              </div>
+            </div>
+            
+            <!-- Internal Tar Roads -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/road.png" alt="Tar Roads" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CONNECTIVITY</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Internal Tar Roads</h2>
+                <p class="leading-relaxed text-base">Well-constructed internal tar roads providing smooth connectivity and easy access to all plots.</p>
+              </div>
+            </div>
+            
+            <!-- Illuminating Street Lights -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/streetlight.png" alt="Street Lights" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SAFETY</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">LED Street Lights</h2>
+                <p class="leading-relaxed text-base">Well-lit pathways and roads with energy-efficient LED street lighting for enhanced safety and security.</p>
+              </div>
+            </div>
+            
+            <!-- CCTV Surveillance -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/cctv-camera.png" alt="CCTV Surveillance" />
+                <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SURVEILLANCE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">24/7 CCTV Monitoring</h2>
+                <p class="leading-relaxed text-base">Comprehensive CCTV surveillance system ensuring round-the-clock security for all residents.</p>
+              </div>
+            </div>
+            
+            <!-- 60km Away from Pune -->
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-contain object-center mb-6" src="assets/images/icons/road.png" alt="Distance from Pune" />
+              <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CONVENIENT LOCATION</h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">60km Away from Pune</h2>
+              <p class="leading-relaxed text-base">Enjoy the perfect balance of tranquility and accessibility, just an hour's drive from Pune.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- LOCATION & MAP SECTION -->
+      <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Prime Location, Excellent Connectivity
+            </h2>
+            <p class="text-lg text-gray-600">
+              20 mins from Shirwal MIDC | 40 mins from National Highway
+            </p>
+          </div>
+
+          <!-- Map -->
+          <div class="h-200 rounded-lg overflow-hidden shadow-xl fade-in-up">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5197.040306598049!2d73.90064437408266!3d18.09520398217149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc25f3a1b13a323%3A0x1dc4f50d20bf6cba!2sShirval%20site!5e0!3m2!1sen!2sin!4v1752745043053!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- CTA SECTION -->
+      <section
+        id="contact"
+        class="py-10 text-white"
+        style="background-color: var(--dark)"
+      >
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 fade-in-up">
+            Ready to Take the Next Step?
+          </h2>
+          <p class="text-lg mb-4 max-w-2xl mx-auto fade-in-up">
+            Your escape to a new world begins here</p>
+            <div
+            class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up"
+            >
+            <a
+              href="assets/newimages/layout.pdf"
+              download="Right-Choice-Escapade-Layout.pdf"
+              class="btn btn-primary"
+              style="background-color: white; color: var(--dark)"
+            >
+              <i class="fas fa-file-download mr-2"></i> Download Layout
+            </a>
+            <a
+              href="assets/brochure-escapade.pdf"
+              download="Right-Choice-Escapade-Brochure.pdf"
+              class="btn btn-primary cursor-pointer"
+              style="background-color: white; color: var(--dark)"
+              onclick="setTimeout(openBrochureModal, 200);"
+            >
+              <i class="fas fa-book-open mr-2"></i> Download Brochure
+            </a>
+
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="background-color: white; color: var(--dark)"
+              onclick="openModal(); return false;"
+            >
+              <i class="fas fa-envelope mr-2"></i> Contact Us
+            </a>
+            </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white text-black py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 text-center md:text-left">
+          <!-- About -->
+          <div>
+            <h4 class="text-xl font-bold text-black mb-4">
+              Right Choice Escapade
+            </h4>
+            <div class="flex justify-center md:justify-start mb-4">
+              <img
+                src="assets/images/new-logo.png"
+                alt="Escapade Logo"
+                class="h-32"
+              />
+            </div>
+            <p class="text-gray-600 mb-4">
+              Your perfect escape to tranquility and an ideal investment
+              opportunity in the heart of nature.
+            </p>
+          </div>
+          <!-- Contact -->
+          <div class="mt-4 md:mt-0">
+            <h4 class="text-xl font-semibold text-black mb-4">Contact Us</h4>
+            <div class="space-y-3 text-gray-600">
+              <p class="flex items-center justify-center md:justify-start">
+                <i
+                  class="fas fa-envelope mr-3"
+                  style="color: var(--primary)"
+                ></i>
+                sales@rightchoicegroup.in
+              </p>
+              <p class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-phone mr-3" style="color: var(--primary)"></i>
+                 +91 9766363939
+              </p>
+              <div class="mt-4">
+                <p class="text-black font-semibold mb-2">Site Address:</p>
+                <p class="flex items-start justify-center md:justify-start">
+                  <i
+                    class="fas fa-map-marker-alt mr-3 mt-1"
+                    style="color: var(--primary)"
+                  ></i>
+                  <span>
+                    At post Atit, near Shirwal,<br />
+                    Tal. Khandala, Dist. Satara
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Office -->
+          <div class="mt-4 md:mt-0">
+            <h4 class="text-xl font-semibold text-black mb-4">Our Office</h4>
+            <div class="space-y-3 text-gray-600">
+              <div class="mb-4">
+                <p class="text-black font-semibold mb-2">Corporate Office:</p>
+                <p>
+                  Right Choice Group.
+                </p>
+                <p>
+                  401, Karmakar Business Bay ( KBB ) Opp. Skoda Showroom, Mumbai Bangalore High
+                </p>
+                <p>Way Baner, Pune, Maharashtra 411045</p>
+              </div>
+            </div>
+          </div>
+          <!-- A Venture By -->
+          <div class="mt-4 md:mt-0">
+            <div class="flex flex-col items-center">
+              <p class="text-black font-semibold mb-4">A Project By:</p>
+              <img
+                src="assets/images/rc-logo.png"
+                alt="Right Choice Logo"
+                class="h-60 w-60"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-300 mt-8 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-600 mb-4 md:mb-0">
+              © 2025 Right Choice. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">×</span>
+        <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <input
+            type="hidden"
+            id="requestType"
+            name="requestType"
+            value="CONTACTUS"
+          />
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Any additional details..."
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="closeModal()"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span id="submitText">Submit Enquiry</span>
+              <span id="loadingText" style="display: none">Submitting...</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> 
+
+
+
+
+
+
+<!--Site- Visit-->
+
+<div id="Site-visit" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeSiteVisitModal()">×</span>
+        <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+        <form id="siteVisitForm">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <input
+            type="hidden"
+            id="requestType"
+            name="requestType"
+            value="SITEVISIT"
+          />
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Any additional details..."
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="closeSiteVisitModal()"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span id="submitText">Submit Enquiry</span>
+              <span id="loadingText" style="display: none">Submitting...</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> 
+
+
+
+
+
+
+
+
+    <!-- Download Brochure-->
+
+
+    <div id="download-brochure" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeBrochureModal()">×</span>
+        <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+        <form id="brochureForm">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <input
+            type="hidden"
+            id="requestType"
+            name="requestType"
+            value="BROCHURE"
+          />
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Any additional details..."
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="closeBrochureModal()"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <span id="submitText">Submit Enquiry</span>
+              <span id="loadingText" style="display: none">Submitting...</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> 
+
+
+
+
+
+<!-- 
+            <a
+              href="#"
+              class="btn btn-phone"
+              style="position: fixed; bottom: 430px; right: 0px; background:green;  color: white; padding-right: 0.5%;  cursor: pointer;"
+              onclick="openModal(); return false;"
+            >
+              <i class="fas fa-phone mr-2"></i>
+            </a> -->
+
+    <div class="call-btn" id="callNowBtn" onclick="openModal(); return false;"       style="writing-mode: vertical-rl; text-orientation: mixed; height: 120px; gap: 0.5rem;">
+      Call Now
+      <i class="fas fa-phone"></i>
+    </div>
+    <a href="#home" id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js"></script>
+    <!-- Alert Modal -->
+    <div id="alertModal" class="modal" style="display:none; align-items: center; justify-content: center;">
+      <div id="alertMessage" style="max-width: 400px; width: 90%; margin: 0 auto; position: relative;"></div>
+      <span class="modal-close" onclick="closeAlertModal()" style="position: absolute; top: 24px; right: 24px; font-size: 2rem; color: #333; cursor: pointer; z-index: 10;">×</span>
+    </div>
+
+    <script>
+      // Show alert modal with message and type: success, failed, warning
+
+
+      function closeAlertModal() {
+        document.getElementById("alertModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    </script>
+ </body>
+</html>
